@@ -1,6 +1,6 @@
 module github.com/ConsenSys/quorum-signer-plugin-for-hashicorp-vault
 
-go 1.18
+go 1.21
 
 require (
 	github.com/ConsenSys/quorum-go-utils v0.0.0-20201118131506-d67a2071c8b0
@@ -9,6 +9,8 @@ require (
 	github.com/hashicorp/vault/sdk v0.5.1
 	github.com/stretchr/testify v1.7.2
 )
+
+replace golang.org/x/net => golang.org/x/net v0.17.0
 
 require (
 	github.com/ConsenSys/quorum/crypto/secp256k1 v0.0.0-20201109194625-1ecd42625e8e // indirect
@@ -50,10 +52,10 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
-	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
-	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
-	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
-	golang.org/x/text v0.3.3 // indirect
+	golang.org/x/crypto v0.14.0 // indirect
+	golang.org/x/net v0.10.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
+	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/time v0.0.0-20200416051211-89c76fbcd5d1 // indirect
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
 	google.golang.org/grpc v1.41.0 // indirect
